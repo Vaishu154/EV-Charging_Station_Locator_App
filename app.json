@@ -19,10 +19,19 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.evcharging.app"  
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+  "plugins": [
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "Allow EV charging station App to use your location."
+        }
+      ]
+    ]
   }
 }
