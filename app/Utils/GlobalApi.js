@@ -1,10 +1,8 @@
-// Uses process.env.GOOGLE_MAPS_API_KEY for the API key. Make sure to set this in your .env file and load it with a dotenv package in your project setup.
 import axios from "axios";
 import { Linking } from 'react-native';
-import { GOOGLE_MAPS_API_KEY } from '@env';
 
 const BASE_URL = "https://maps.googleapis.com/maps/api/place/nearbysearch/json";
-const API_KEY = GOOGLE_MAPS_API_KEY;
+const API_KEY = "GOOGLE_API_KEY";
 
 const DEFAULT_STATIONS = [
   {
@@ -59,11 +57,12 @@ export default {
           key: API_KEY,
           location: `${location.latitude},${location.longitude}`,
           type: 'gas_station',
-          radius: 5000,
+          radius: 10000, // 10km radius
         }
       });
 
       if (response.data && response.data.results) {
+        console.log('Google Places results:', response.data.results.length);
         const stations = response.data.results.map(place => ({
           id: place.place_id,
           name: place.name,

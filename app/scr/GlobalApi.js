@@ -1,4 +1,7 @@
 import axios from "axios";
+// import Constants from 'expo-constants';
+
+// const GOOGLE_API_KEY = Constants.expoConfig.extra.GOOGLE_API_KEY;
 
 const BASE_URL = "https://nominatim.openstreetmap.org/search";
 
