@@ -23,8 +23,6 @@ React Native app to find, save, and navigate to nearby EV charging stations usin
 | 🔥 Firebase             | Authentication + Firestore DB         |
 | 🗺️ Nominatim API        | Location & geocoding (OpenStreetMap)  |
 | 📍 React Navigation     | Screen-to-screen navigation           |
-| 💾 AsyncStorage         | Local storage for favorites           |
-
 ---
 
 ## 📦 Installation & Setup
@@ -61,8 +59,7 @@ Vaishnavi Sunil Gholap
 📧 vaishnavigholap2004@gmail.com
 
 ## 🪪 License
-This project is licensed under the MIT License.
-See the LICENSE file for more details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 
 
